@@ -27,6 +27,8 @@ sudo nano /etc/default/grub.d/nvidia-modeset.cfg
 GRUB_CMDLINE_LINUX="$GRUB_CMDLINE_LINUX nvidia-drm.modeset=1 nvidia-drm.fbdev=1"
 # ctrl + x, y, enter
 
+sudo reboot
+
 sudo systemctl enable --now nvidia-suspend.service
 sudo systemctl enable --now nvidia-hibernate.service
 sudo systemctl enable --now nvidia-resume.service
