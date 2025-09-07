@@ -17,6 +17,7 @@ sudo apt install linux-headers-amd64
 sudo nano /etc/apt/sources.list
 # add contrib non-free at the end of every line in sources.list
 # ctrl + x, y, enter
+sudo apt update
 
 # installation itself
 sudo apt install nvidia-open-kernel-dkms nvidia-driver firmware-misc-nonfree
