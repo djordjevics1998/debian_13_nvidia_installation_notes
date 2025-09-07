@@ -14,8 +14,8 @@ sudo dpkg --add-architecture i386 && sudo apt update
 # prerequisites
 sudo apt install linux-headers-amd64
 
-# add contrib non-free at the end of every line in sources.list
 sudo nano /etc/apt/sources.list
+# add contrib non-free at the end of every line in sources.list
 # ctrl + x, y, enter
 
 # installation itself
