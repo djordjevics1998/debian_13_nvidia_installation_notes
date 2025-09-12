@@ -33,6 +33,7 @@ sudo systemctl enable --now nvidia-suspend.service
 sudo systemctl enable --now nvidia-hibernate.service
 sudo systemctl enable --now nvidia-resume.service
 
+// SKIP IF HYBRID (OPTIMUS) MODE
 sudo nano /etc/modprobe.d/nvidia-power-management.conf
 # if this entry doesn't exist, add it:
 options nvidia NVreg_PreserveVideoMemoryAllocations=1
